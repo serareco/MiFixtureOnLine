@@ -6,5 +6,6 @@ class Player {
 	static hasMany = [teams:Team]
 	
     static constraints = {
+		teams(nullable:true)
     }
 }

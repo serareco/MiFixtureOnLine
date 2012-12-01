@@ -1,6 +1,6 @@
 package mifixtureonline
 
-class User {
+class User extends SecUser{
 	String email
 	String name
 	String lastname
