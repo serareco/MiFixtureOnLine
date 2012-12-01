@@ -22,9 +22,8 @@ class UserTests {
 		   age: 25)
 		assert 'sergio_areco@hotmail.com' == user.email
 		assert 'Sergio' == user.name
-		//assert 'Areco' == user.lastname
+		assert 'Areco' == user.lastname
 		assert 25 == user.age
-		assert 30 == user.birthDay.date
-		System.out.println(user.lastname);
+		assert 1 == user.birthDay.date
     }
 }

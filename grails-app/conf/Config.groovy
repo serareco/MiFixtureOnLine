@@ -89,3 +89,24 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+grails {
+	mail {
+	  host = "smtp.gmail.com"
+	  port = 465
+	  username = "mifixtureonline@gmail.com"
+	  password = "fixtures2012"
+	  props = ["mail.smtp.auth":"true",
+			   "mail.smtp.socketFactory.port":"465",
+			   "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+			   "mail.smtp.socketFactory.fallback":"false"]   }
+ }
+
+// Added by the Spring Security Core plugin:
+grails.plugins.springsecurity.userLookup.userDomainClassName = 'mifixture.SecUser'
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'mifixture.SecUserSecRole'
+grails.plugins.springsecurity.authority.className = 'mifixture.SecRole'
+
+// Added by the Spring Security Core plugin:
+grails.plugins.springsecurity.userLookup.userDomainClassName = 'mifixtureonline.SecUser'
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'mifixtureonline.SecUserSecRole'
+grails.plugins.springsecurity.authority.className = 'mifixtureonline.SecRole'
